@@ -1,0 +1,110 @@
+# 🧠 DSA Question Notes
+
+## 📌 Question Details
+- **Question Name:** Single Number 
+- **Platform:** LeetCode
+- **Link:**  https://leetcode.com/problems/single-number/description/
+- **Topic:** Array
+- **Difficulty:** Easy  
+- **Date Solved:**  09-02-2026
+
+---
+
+## 🎯 Problem Summary (In My Words)
+> Given a non-empty array where every elemnet appears twice except one 
+> Return that Single one 
+---
+
+## 🔍 Key Observations
+- Non-empty array 
+- Every element twice 
+- Only One element appears once
+- 
+
+---
+
+## 🚫 Brute Force Approach
+**Idea:** Using nested loops
+**Time Complexity:** O(n ^ 2)
+**Space Complexity:** O(1) 
+**Why Not Optimal:**  Because we are using the TC of n ^ 2
+
+---
+
+## ✅ Better Approach
+**Core Idea:**  Using hashing
+**Why It Works:** as every element twice and only one element appears once - so we can store them in hash and return the element which will have the value of 1 
+**Data Structures Used:**  Vector 
+**Why Not Optimal:** Becase in this still we are using extra space - O(n)
+
+### 🪜 Step-by-Step Logic
+1. Initalize - vector<int> nums2(n, 0)
+2. Then Loop from o to n - 1 and store the frequency of all values of nums in nums2
+3. After that again start a loop from 0 to n - 1 and check nums2[i] == 1 if yes then return that value index
+---
+
+## ⏱ Complexity Analysis
+- **Time Complexity:** O(n ^ 2)
+- **Space Complexity:** O(n)
+
+---
+
+
+## ✅ Optimized Approach
+**Core Idea:**  Using Xor method 
+**Why It Works:** since all the elements except one appears twice so we can do xor and find the single element 
+**Data Structures Used:**  
+
+### 🪜 Step-by-Step Logic
+1. Initalize Xorr = 0
+2. Then Loop from o to n - 1  and calculate the xor of all values 
+3. At last return the xorr
+
+---
+
+## ⏱ Complexity Analysis
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(1)
+---
+
+## ⚠️ Mistakes I Made
+- Forget to mention edge case
+
+---
+
+## 🧪 Edge Cases
+- if size of nums is 1 then return the value of nums[0]
+
+---
+
+## 🧩 Pattern Tag
+`#Array` `#Xor`
+
+---
+
+## 🔁 Revision Log
+
+### Day 3
+- Could solve without help?  
+- Time Taken:  
+- Confidence (1–5):  
+
+### Day 7
+-  
+
+### Day 15
+-  
+
+### Day 30
+-  
+
+---
+
+## 🗣 Interview Explanation (Optional)
+> We are a given a array in which all the values appears twice except one and we have to return that element 
+
+---
+
+## 💡 Extra Notes / Follow-ups
+- 
+- 
